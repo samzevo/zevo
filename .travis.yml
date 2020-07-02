@@ -12,8 +12,10 @@ deploy:
     provider: elasticbeanstalk
     region: "ap-south-1"
     app: "zevo"
-    env: "Zevo-env"
+    env: "Zevo-env-1"
     bucket_name: "elasticbeanstalk-ap-south-1-032348315066"
+    bucket_path: "zevo"
+    label: "zevo"
     on:
         branch: master
     access_key_id: "AKIAQPCA4DW5PANVEYNP"
