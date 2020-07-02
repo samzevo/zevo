@@ -17,5 +17,6 @@ deploy:
     bucket_path: "zevo"
     on:
         branch: master
-    access_key_id: "AKIAQPCA4DW5PANVEYNP"
-    secret_access_key: "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"
+    access_key_id: $ID
+    secret_access_key:
+        secure: $KEY
