@@ -7,3 +7,16 @@ before_install:
 
 script:
     - docker run -e CI=true zevocorp/zevo npm run test -- --coverage
+
+deploy:
+    - provider: elasticbeanstalk
+    - region: "ap-south-1"
+    - app: "zevo"
+    - env: "Zevo-env"
+    - bucket_name: "elasticbeanstalk-ap-south-1-032348315066"
+    - bucket_path: "zevo"
+    on:
+        branch: master
+    access_key_id: $EB-Access-Key
+    secret_key:
+        secure: $EB-Secret-key
