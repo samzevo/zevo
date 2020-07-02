@@ -17,6 +17,6 @@ deploy:
     bucket_path: "zevo"
     on:
         branch: master
-    access_key_id: $EB-Access-Key
+    access_key_id: $AWS_ACCESS_KEY
     secret_access_key:
-        secure: "$EB-Secret-Key"
+        secure: "$AWS_SECRET_KEY"
