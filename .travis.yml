@@ -6,4 +6,4 @@ before_install:
     - docker build -t zevocorp/zevo -f Dockerfile.dev .
 
 script:
-    - docker run zevocorp/zevo npm run test -- --coverage
+    - docker run -e CI=true zevocorp/zevo npm run test -- --coverage
