@@ -11,10 +11,10 @@ script:
 deploy:
     provider: elasticbeanstalk
     region: "ap-south-1"
-    app: "web"
-    env: "Web-env"
+    app: "zevo"
+    env: "Zevo-env"
     bucket_name: "elasticbeanstalk-ap-south-1-032348315066"
-    bucket_path: "web"
+    bucket_path: "zevo"
     label: "Sample Application"
     on:
         branch: master
