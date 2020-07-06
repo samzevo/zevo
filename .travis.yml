@@ -18,6 +18,6 @@ deploy:
     label: "Sample Application"
     on:
         branch: master
-    access_key_id : ID
-    secret_access_key: 
-        secure: KEY
+    access_key_id: $ID
+    secret_access_key:
+        secure: "$KEY"
