@@ -11,14 +11,14 @@ script:
 deploy:
     provider: elasticbeanstalk
     region: "ap-south-1"
-    app: "zevo"
-    env: "Zevo-env-1"
+    app: "web"
+    env: "Web-env"
     bucket_name: "elasticbeanstalk-ap-south-1-032348315066"
-    bucket_path: "zevo"
-    label: "zevo"
+    bucket_path: "web"
+    label: "Sample Application"
     on:
         branch: master
     access_key_id: 
-        secure: $AWS_ACCESS_KEY
+        secure: $ID
     secret_access_key: 
-        secure: $AWS_SECRET_KEY
+        secure: $KEY
